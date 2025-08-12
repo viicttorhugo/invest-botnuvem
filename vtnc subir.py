@@ -11,7 +11,7 @@ from iqoptionapi.stable_api import IQ_Option
 
 # =================== CONFIG BÁSICA ===================
 app = Flask(__name__)
-app.secret_key = os.getenv("SECRET_KEY", "troque-esta-chave")
+app.secret_key = os.getenv("SECRET_KEY", "Vhj02122024$")
 
 API_AUTH_BASE = os.getenv("API_AUTH_BASE", "https://licencas-2.onrender.com")
 API_AUTH_URL  = f"{API_AUTH_BASE}/api/auth"
@@ -399,3 +399,4 @@ def health():
 if __name__ == "__main__":
     port = int(os.getenv("PORT", "5000"))
     app.run(host="0.0.0.0", port=port)
+
